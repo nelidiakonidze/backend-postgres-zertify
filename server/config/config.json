@@ -1,0 +1,26 @@
+{
+  "production": {
+    "use_env_variable": "POSTGRES_DATABASE_URL",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "development": {
+    "use_env_variable": "POSTGRES_DATABASE_URL",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "students",
+    "host": "127.0.0.1",
+    "port": 5433,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "store": {
+    "adapter": "sequelize",
+    "dialect": "postgres",
+    "url": "postgres://localhost/students"
+  }
+}
